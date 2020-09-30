@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hashtag Finder | Login</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Hashtag Finder | Login</title>
-</head>
+  <body>
+    <!--Header-->
+    <iframe
+      src="./Components/header.html"
+      frameborder="0"
+      width="100%"
+    ></iframe>
+    <!--End Header-->
+    <section>
+      <div class="tela-login">
+        <form method="POST" action="">
+          <h1>Login</h1>
+          <p>
+            <input type="text" name="username" placeholder="Usuário" required />
+          </p>
 
-<body>
-  <header>
-    <div>
-      <img src="./assets/logo.svg" alt="" />
-      <button>SOBRE</button>
-      <button>LOGIN</button>
-    </div>
-  </header>
+          <p>
+            <input
+              type="password"
+              name="password"
+              placeholder="Senha"
+              required
+            />
+          </p>
 
-  <section>
-    <div class="tela-login">
-      <form method="POST" action="">
-        <h1>Login</h1>
-        <p>
-          <input type="text" name="username" placeholder="Usuário" required />
-        </p>
+          <p>
+            <input type="submit" value="Login" />
+          </p>
+        </form>
+      </div>
+    </section>
 
-        <p>
-          <input type="password" name="password" placeholder="Senha" required />
-        </p>
-
-        <p>
-          <input type="submit" value="Login"/>
-        </p>
-
-      </form>
-
-
-
-
-    </div>
-  </section>
-
-  <footer>
-    <p>@Cocreare 2020. Todos os direitos reservados</p>
-  </footer>
-</body>
-
+    <!--Footer-->
+    <iframe src="./Components/footer.html" frameborder="0"></iframe>
+    <!--End Footer-->
+  </body>
 </html>
