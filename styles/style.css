@@ -9,6 +9,25 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+/*STYLE FOR IFRAME*/
+.iframe-header-container {
+  height: 117px;
+}
+@media screen and (max-width: 768px) {
+  .iframe-header-container {
+    height: 82px;
+  }
+}
+.iframe-footer-container {
+  height: 90px;
+  margin-bottom: auto;
+}
+.iframe-div {
+  margin: 0;
+  padding: 0;
+  max-height: 90px;
+}
+
 /*HEADER*/
 .header-container {
   background-color: #0a1744;
@@ -75,15 +94,14 @@ body {
 .footer-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #0a1744;
   height: 90px;
-  line-height: 50px;
   color: #fff;
 }
 /*FOOTER for 600px AND LESS*/
 @media screen and (max-width: 600px) {
   .footer-container {
-    line-height: 70px;
     font-size: 12px;
   }
 }
