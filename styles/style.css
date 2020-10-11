@@ -1,11 +1,15 @@
+/*FONTS FOR PROJECT*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+/*BASE STYLE*/
 body {
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
 }
+
+/*HEADER*/
 .header-container {
   background-color: #0a1744;
   height: 117px;
@@ -24,12 +28,9 @@ body {
 .base-btn {
   width: 170px;
   height: 49px;
-}
-.base-btn {
   text-align: center;
   line-height: 49px;
   border-radius: 25px;
-  margin-left: 35px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -39,5 +40,33 @@ body {
 }
 .header-menu-button2 {
   background-color: #1e3e7b;
+  margin-left: 35px;
   color: #fff;
+}
+
+/*HEADER FOR 768px AND LESS*/
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: 82px;
+  }
+  .header-logo {
+    margin-left: 16px;
+    max-width: 23px;
+    max-height: 130px;
+  }
+  .header-logo-img {
+    width: 130px;
+  }
+  .header-menu {
+    margin-right: 16px;
+  }
+  .base-btn {
+    width: 105px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .header-menu-button2 {
+    margin-left: 13px;
+  }
 }
