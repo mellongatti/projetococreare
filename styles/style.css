@@ -70,3 +70,20 @@ body {
     margin-left: 13px;
   }
 }
+
+/*FOOTER*/
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background-color: #0a1744;
+  height: 90px;
+  line-height: 50px;
+  color: #fff;
+}
+/*FOOTER for 600px AND LESS*/
+@media screen and (max-width: 600px) {
+  .footer-container {
+    line-height: 70px;
+    font-size: 12px;
+  }
+}
