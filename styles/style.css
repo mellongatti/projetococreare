@@ -8,6 +8,13 @@ body {
   padding: 0;
   font-family: "Rubik", sans-serif;
 }
+.white-text {
+  color: #fff;
+}
+.error {
+  border: 2px solid red;
+  background-color: #fd8d8d;
+}
 
 /*STYLE FOR IFRAME*/
 .iframe-header-container {
@@ -99,9 +106,76 @@ body {
   height: 90px;
   color: #fff;
 }
+
 /*FOOTER for 600px AND LESS*/
 @media screen and (max-width: 600px) {
   .footer-container {
     font-size: 12px;
+  }
+}
+
+/*INDEX*/
+/*SECTION*/
+.index-section-container {
+  background-image: url("../assets/hero-bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+}
+.index-section-textarea {
+  margin-top: 30px;
+  margin-left: 80px;
+}
+.index-section-textarea-heading {
+  font-size: 3em;
+}
+.index-section-textarea-text {
+  margin-top: -10px;
+}
+.index-section-search {
+  align-self: center;
+  margin-top: 70px;
+  background-color: #1e3e7b;
+  width: 55%;
+  height: 55px;
+  border-radius: 35px;
+  display: flex;
+  padding-left: 20px;
+  opacity: 0.85;
+}
+.index-section-search > label {
+  align-self: center;
+}
+.index-section-search > input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 85%;
+  margin-left: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+.index-section-search > input:focus {
+  outline-style: none;
+}
+
+/*INDEX SECTION for 768px AND LESS*/
+@media screen and (max-width: 768px) {
+  .index-section-container {
+    height: 70vh;
+  }
+  .index-section-textarea {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  .index-section-textarea-heading {
+    font-size: 2.2em;
+  }
+  .index-section-search {
+    width: 75%;
   }
 }
