@@ -1,0 +1,152 @@
+/* Fundo do site */
+body {
+    background-image: url(./assets/table-bg.jpg);
+    background-position: 30% 45%;
+    background-size: cover;
+    opacity: 0,90;
+    padding: 210px;
+    padding-top: 0%
+
+}
+/* Cor do texto "BUSCAS REALIZADAS"*/
+h1 {
+    color: #72EFDB;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+}
+/*cabecalho da tabela*/    
+.thead { 
+    border: none;
+    display:flex;
+    flex-direction:row;
+    border-collapse: collapse;
+    border-top-right-radius: 14px;
+    border-bottom: 1px solid white;
+    border-bottom-style: hidden;
+    left: 184px;
+    width: 1500px;
+    background-color: #0b1c41;
+    opacity: 1;
+    width: 100%;
+    border-radius: 14px;
+    overflow:hidden;
+    
+}
+/*titulos do cabecalho da tabela (hashtag, data e hora*/
+.hash {    
+    display:flex;
+    flex-direction:row;
+    font-family: 'Montserrat', sans-serif;
+    color: #72EFDB;        
+    top: 366px;
+    left: 208px;
+    width: 1500px;  
+    opacity: 1;
+    font-size: 24px;
+    line-height: 4;
+    letter-spacing: 1px;
+}
+/* propriedades da tabela*/
+.tr{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    background-image: url(./assets/table-bg.jpg);    
+    border: none;        
+    color: #72EFDB;
+    text-align: left;
+    font-family:'Rubik', sans-serif; 
+    font-size: 24px;
+    line-height: 4;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+    border-bottom: 1px solid white;  
+    
+}
+/*nome da hashtag ex: "#pride" */
+.name{
+    color: white;
+    font-family:'Montserrat', sans-serif; 
+    letter-spacing: 4px;
+    padding-right: 520px;
+    padding-inline-start: 50px;
+}
+/*hora da hashtag consultada ex: "22:30"*/
+.hour{
+    color: #72EFDB;
+    font-family:'Montserrat', sans-serif; 
+    letter-spacing: 4px;
+    padding-right: 52px;
+    padding-inline-start: 155px;
+    letter-spacing: 4px;
+    top: 366px;
+    left: 208px;
+    width: 1500px;
+    opacity: 1;
+    font-size: 24px;
+    line-height: 4;
+}
+/*data da hashtag consultada ex: "15/10/2020"*/
+.date {
+    color: #72EFDB;
+    font-family:'Montserrat', sans-serif; 
+    letter-spacing: 4px;
+    padding-right: 52px;
+    padding-inline-start: 315px;
+    letter-spacing: 4px;
+    top: 366px;
+    left: 208px;
+    width: 1500px;
+    opacity: 1;
+    font-size: 24px;
+    line-height: 4;
+}
+/*propriedades da palavra "hashtag" do cabecalho*/
+.hash {
+    font-family:"Rubik", sans-serif; 
+    letter-spacing: 4px;
+    padding-right: 520px;
+    padding-inline-start: 50px;
+}
+/*propriedades da palavra "data e hora" do cabecalho*/
+.dateline, .hourline{
+    letter-spacing: 4px;
+    padding-inline-start: 220px;
+}
+
+
+
+
+
+/*Coluna onde fica o nome das ultimas # pesquisadas
+td.name {
+    border: none;
+    border-collapse: collapse;
+    border-bottom: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    top: 366px;
+    left: 208px;
+    width: 1500px; 
+    height: 51px;
+    opacity: 80%;
+}
+
+/*cor da fonte da HASHTAG, DATA e HORA*
+td {
+    
+    font-family: "Rubik", sans-serif;
+    border: none;
+    border-collapse: collapse;
+    border-bottom: 1px solid white;
+    color: #72EFDB
+}
+
+tbody {
+    
+    padding: 100px;
+    font-size: 24px;
+    line-height: 4;
+    letter-spacing: 1px;
+}
+
