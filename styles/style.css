@@ -286,3 +286,97 @@ body {
   color: #72efdb;
   font-weight: 700;
 }
+
+/*POSTS E IMAGENS FOR 1200px AND LESS*/
+@media screen and (max-width: 1200px) {
+  .postimage-hashtagcontent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*LIST OF IMAGES*/
+  .postimage-imagelist {
+    width: 65%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  /*LIST OF POSTS*/
+  .postimage-postlist {
+    width: 80%;
+  }
+}
+
+/*POSTS E IMAGENS FOR 768px AND LESS*/
+@media screen and (max-width: 768px) {
+  .postimage-hashtagcontent {
+    width: 95%;
+  }
+  /*LIST OF IMAGES*/
+  .postimage-imagelist {
+    width: 90%;
+    justify-content: center;
+    margin-left: -50px;
+  }
+
+  /*LIST OF POSTS*/
+  .postimage-postlist {
+    width: 100%;
+  }
+}
+
+/*POSTS E IMAGENS FOR 520px AND LESS*/
+@media screen and (max-width: 520px) {
+  /*LIST OF IMAGES*/
+  .postimage-imagelist {
+    width: 100%;
+    justify-content: center;
+  }
+  /*LIST OF POSTS*/
+  .postimage-postlist li {
+    margin-left: -15px;
+  }
+
+  .postimage-postlist li h2 {
+    font-size: 23px;
+  }
+
+  .postimage-postlist li h2 span {
+    font-size: 15px;
+  }
+
+  .postimage-postlist li p {
+    font-size: 13px;
+  }
+
+  .postimage-postlist li a {
+    font-size: 13px;
+  }
+}
+
+/*POSTS E IMAGENS FOR 480px AND LESS*/
+@media screen and (max-width: 480px) {
+  .postimage-imagelist li {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  .postimage-imagelist-image {
+    width: 150px;
+    border-radius: 12px;
+  }
+
+  .postimage-imagelist-textdesc {
+    padding-left: 7px;
+  }
+
+  .postimage-imagelist-textdesc small {
+    font-size: 11px;
+  }
+}
+/*POSTS E IMAGENS FOR 420px AND LESS*/
+@media screen and (max-width: 420px) {
+  .postimage-postlist li h2 span {
+    display: none;
+  }
+}
