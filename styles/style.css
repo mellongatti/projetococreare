@@ -16,8 +16,12 @@ body {
   border: 2px solid red;
   background-color: #fd8d8d;
 }
+.hide-content {
+  display: none;
+}
 
-/*STYLE FOR IFRAME*/
+/*IFRAME*/
+/*STYLE*/
 .iframe-header-container {
   height: 117px;
 }
@@ -29,7 +33,7 @@ body {
 .iframe-footer-container {
   height: 90px;
   margin-bottom: auto;
-  color:white
+  color: white;
 }
 .iframe-div {
   margin: 0;
@@ -118,185 +122,494 @@ body {
 
 /*ABOUT*/
 /*MAIN*/
-.about-container{
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
+.about-container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
 }
 
 .about-project {
-  
-color: white;
-display: flex
-
-
-
+  color: white;
+  display: flex;
 }
 
-
-.image-body{
-
-    padding-right: 300px
-
-
-    
+.image-body {
+  padding-right: 300px;
 }
 
 .who-are {
-
-color: white;
-display: flex
-
-
+  color: white;
+  display: flex;
 }
 
-.title-about{
-    color: white;
-    width: 30em;
-    
+.title-about {
+  color: white;
+  width: 30em;
 }
 
 .text-1 {
-
-color: white; 
-
-
-
+  color: white;
 }
 
 .cards {
-    
-
-
-    width: 1500px;
-    height: 400px;
-    display: flex;
-    display: inline-flex;
-    padding: 20px 10px 80px;
+  width: 1500px;
+  height: 400px;
+  display: flex;
+  display: inline-flex;
+  padding: 20px 10px 80px;
 }
 
-
-.italo { 
-    width: 250px;
-    height: 300px;
-    border-radius: 6px;
-    background-color: #0a1744;
-    box-shadow: 0 1px 5px;
-    display: inline-block;
-    color: white;
-    margin: 20px 0px 80px;
+.italo {
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: #0a1744;
+  box-shadow: 0 1px 5px;
+  display: inline-block;
+  color: white;
+  margin: 20px 0px 80px;
 }
 
 .melissa {
-    width: 250px;
-    height: 300px;
-    border-radius: 6px;
-    background-color: #0a1744;
-    box-shadow: 0 1px 5px;
-    display: inline-block;
-    color: white;
-    margin: 20px 30px 80px;
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: #0a1744;
+  box-shadow: 0 1px 5px;
+  display: inline-block;
+  color: white;
+  margin: 20px 30px 80px;
 }
 
 .kaique {
-
-    width: 250px;
-    height: 300px;
-    border-radius: 6px;
-    background-color: #0a1744;
-    box-shadow: 0 1px 5px;
-    display: inline-block;
-    color: white;
-    margin: 20px 0px 80px
-    
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: #0a1744;
+  box-shadow: 0 1px 5px;
+  display: inline-block;
+  color: white;
+  margin: 20px 0px 80px;
 }
 
-.josivan{
-
-    width: 250px;
-    height: 300px;
-    border-radius: 6px;
-    background-color: #0a1744;
-    box-shadow: 0 1px 5px;
-    display: inline-block;
-    color: white;
+.josivan {
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: #0a1744;
+  box-shadow: 0 1px 5px;
+  display: inline-block;
+  color: white;
 }
 
 .image {
-
-    background-color: #0a1744;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border-radius: 50%;
-    margin-top: 40px;
-    
-
+  background-color: #0a1744;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-top: 40px;
 }
 
 .image img {
-
-    background-color: #0a1744;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-
-
+  background-color: #0a1744;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 
-.card-body{
-
-    background-color: #0a1744;
-    padding: 20px;
-    padding-top: 1px;
-    text-align: center;
-
-
-
-
+.card-body {
+  background-color: #0a1744;
+  padding: 20px;
+  padding-top: 1px;
+  text-align: center;
 }
 
-.card-body h3{
-    text-align: center;
-   color: rgb(114, 239, 219)
+.card-body h3 {
+  text-align: center;
+  color: rgb(114, 239, 219);
 }
-
 
 .top {
-
-    border-radius: 6px;
-    background-color: #0a1744;
-    display: flex;
-    justify-content: center;
-    
-        }
-
-
+  border-radius: 6px;
+  background-color: #0a1744;
+  display: flex;
+  justify-content: center;
+}
 
 h1 {
-
-    font-size: 60px;
-    text-align: justify;
-    margin-left: 0.5px;
-
+  font-size: 60px;
+  text-align: justify;
+  margin-left: 0.5px;
 }
-    
 
-
-p{
-
-    text-align: center;
-    color: white;
-
+p {
+  text-align: center;
+  color: white;
 }
 
 h2 {
-
-    font-size: 40px;
+  font-size: 40px;
   color: white;
-
-	
 }
 
+/*INDEX*/
+/*SECTION*/
+.index-section-container {
+  background-image: url("../assets/hero-bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+}
+.index-section-textarea {
+  margin-top: 30px;
+  margin-left: 80px;
+}
+.index-section-textarea-heading {
+  font-size: 3em;
+}
+.index-section-textarea-text {
+  margin-top: -10px;
+}
+.index-section-search {
+  align-self: center;
+  margin-top: 70px;
+  background-color: #1e3e7b;
+  width: 55%;
+  height: 55px;
+  border-radius: 35px;
+  display: flex;
+  padding-left: 20px;
+  opacity: 0.85;
+}
+.index-section-search > label {
+  align-self: center;
+}
+.index-section-search > input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 85%;
+  margin-left: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+.index-section-search > input:focus {
+  outline-style: none;
+}
+
+/*INDEX SECTION for 768px AND LESS*/
+@media screen and (max-width: 768px) {
+  .index-section-container {
+    height: 70vh;
+  }
+  .index-section-textarea {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  .index-section-textarea-heading {
+    font-size: 2.2em;
+  }
+  .index-section-search {
+    width: 75%;
+  }
+}
+
+/*POSTS E IMAGENS*/
+/*SECTION*/
+/*GENERAL CONTENT*/
+.postimage-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #0a1744;
+}
+
+.postimage-headingtext {
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+
+.postimage-hashtagcontent {
+  display: flex;
+  width: 90%;
+}
+
+.postimage-imagelist li,
+.postimage-postlist li {
+  list-style: none;
+}
+
+/*LIST OF IMAGES*/
+.postimage-imagelist {
+  display: flex;
+  flex-flow: wrap;
+  align-content: baseline;
+  width: 40%;
+}
+
+.postimage-imagelist li {
+  position: relative;
+  margin-left: 35px;
+  margin-bottom: 35px;
+}
+
+.postimage-imagelist-image {
+  width: 180px;
+  border-radius: 15px;
+}
+
+.postimage-imagelist-textdesc {
+  position: absolute;
+  z-index: 1;
+  margin-top: -55px;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.postimage-imagelist-textdesc small {
+  font-size: 11px;
+}
+
+/*LIST OF POSTS*/
+.postimage-postlist {
+  width: 55%;
+}
+
+.postimage-postlist li {
+  width: 100%;
+  border: 1px solid #ffffff24;
+  background-color: #1e3e7b17;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  display: flex;
+  height: 180px;
+  color: #fff;
+  text-align: left;
+}
+
+.postimage-postlist li img {
+  width: 82px;
+  height: 82px;
+  border-radius: 41px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.postimage-postlist li div {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.postimage-postlist li h2 {
+  font-size: 27px;
+}
+
+.postimage-postlist li h2 span {
+  font-size: 20px;
+  font-weight: normal;
+  opacity: 43%;
+}
+
+.postimage-postlist li p {
+  font-size: 15px;
+}
+
+.postimage-postlist li a {
+  text-decoration: none;
+  color: #72efdb;
+  font-weight: 700;
+}
+
+/*POSTS E IMAGENS FOR 1200px AND LESS*/
+@media screen and (max-width: 1200px) {
+  .postimage-hashtagcontent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*LIST OF IMAGES*/
+  .postimage-imagelist {
+    width: 65%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  /*LIST OF POSTS*/
+  .postimage-postlist {
+    width: 80%;
+  }
+}
+
+/*POSTS E IMAGENS FOR 768px AND LESS*/
+@media screen and (max-width: 768px) {
+  .postimage-hashtagcontent {
+    width: 95%;
+  }
+  /*LIST OF IMAGES*/
+  .postimage-imagelist {
+    width: 90%;
+    justify-content: center;
+    margin-left: -50px;
+  }
+
+  /*LIST OF POSTS*/
+  .postimage-postlist {
+    width: 100%;
+  }
+}
+
+/*POSTS E IMAGENS FOR 520px AND LESS*/
+@media screen and (max-width: 520px) {
+  /*LIST OF IMAGES*/
+  .postimage-imagelist {
+    width: 100%;
+    justify-content: center;
+  }
+  /*LIST OF POSTS*/
+  .postimage-postlist li {
+    margin-left: -15px;
+  }
+
+  .postimage-postlist li h2 {
+    font-size: 23px;
+  }
+
+  .postimage-postlist li h2 span {
+    font-size: 15px;
+  }
+
+  .postimage-postlist li p {
+    font-size: 13px;
+  }
+
+  .postimage-postlist li a {
+    font-size: 13px;
+  }
+}
+
+/*POSTS E IMAGENS FOR 480px AND LESS*/
+@media screen and (max-width: 480px) {
+  .postimage-imagelist li {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  .postimage-imagelist-image {
+    width: 150px;
+    border-radius: 12px;
+  }
+
+  .postimage-imagelist-textdesc {
+    padding-left: 7px;
+  }
+
+  .postimage-imagelist-textdesc small {
+    font-size: 11px;
+  }
+}
+/*POSTS E IMAGENS FOR 420px AND LESS*/
+@media screen and (max-width: 420px) {
+  .postimage-postlist li h2 span {
+    display: none;
+  }
+}
+
+/*LOGIN*/
+/*MAIN*/
+.login-body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #0a1744;
+  background-image: url(../assets/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*alinhamento no centro do login*/
+.main-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*parte que foi criado o desfoque da caixa de login*/
+.container-login {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+h1 {
+  color: #72efdb;
+  size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+/*inicio da estilização dos inputs*/
+.login-username,
+.login-password {
+  text-align: center;
+}
+
+.login-username,
+.login-password,
+.login-submit {
+  padding-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 350px;
+  background-color: initial;
+  border: none;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.2);
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #72efdb;
+  border: none;
+  color: #0b1741;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+::placeholder {
+  color: white;
+}
+/*Fim da estilização dos inputs*/
+
+/*LOGIN FOR 500px AND LESS*/
+@media screen and (max-width: 500px) {
+  .container-login {
+    width: 300px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 270px;
+  }
+}

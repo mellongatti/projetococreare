@@ -3,36 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hashtag Finder</title>
+    <link rel="stylesheet" href="../styles/style.css">
   </head>
   <body>
     <!--HEADER-->
     <iframe
+      class="iframe-header-container"
       src="./components/header.html"
       frameborder="0"
       width="100%"
     ></iframe>
     <!--END HEADER-->
     <!-- MAIN SECTION-->
-    <section>
+    <section class="index-section-container">
       <br />
-      <img src="./assets/hero-bg.jpg" width="100%" alt="" />
-      <h1>Encontre hashtags de maneira fácil</h1>
-      <p>
-        Digite o que deseja no campo de buscas e confira os resultados do
+      <div class="index-section-textarea ">
+      <h1 class="index-section-textarea-heading white-text">Encontre hashtags<br />de maneira fácil</h1>
+      <p class="index-section-textarea-text white-text">
+        Digite o que deseja no campo de buscas e<br />confira os resultados do
         Twitter abaixo
       </p>
-      <div>
-        <img src="./assets/icon-search.svg" alt="" />
-        <input type="search" name="busca" id="busca" placeholder="Buscar..." />
       </div>
+      <form class="index-section-search" action="" method="get">
+        <label for="busca"><img src="./assets/icon-search.svg" width="20px" alt=""/></label>
+        <input type="search" name="busca" id="busca" placeholder="Buscar..." />
+      </form>
     </section>
     <!--END MAIN SECTION-->
     <!--Footer-->
+    <div class="iframe-div">
     <iframe
+      class="iframe-footer-container"
       src="./components/footer.html"
       frameborder="0"
-      width="100%"
+      scolling="no"
+      margin="0"
+      width="100%"      
     ></iframe>
+    </div>
     <!--End Footer-->
   </body>
 </html>

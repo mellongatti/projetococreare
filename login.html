@@ -3,43 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <title>Login | Hashtag Finder</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body>
+  <body class="login-body">
     <!--Header-->
     <iframe
+      class="iframe-header-container"
       src="./components/header.html"
       frameborder="0"
       width="100%"
     ></iframe>
     <!--End Header-->
     <!--Section-->
-    <section>
-      <div>
+    <section class="main-container">
+      <div class="container-login">
         <form method="POST" action="">
           <h1>Login</h1>
-          <p>
+          <div class="login-username">
             <input type="text" name="username" placeholder="Usuário" required />
-          </p>
+          </div>
           <!--Input-->
-          <p>
+          <div class="login-password">
             <input
               type="password"
               name="password"
               placeholder="Senha"
               required
             />
-          </p>
+          </div>
           <!--End Input-->
-          <p>
-            <input type="submit" value="Login" />
-          </p>
+          <div class="login-submit">
+            <input type="submit" value="ACESSAR" />
+          </div>
         </form>
       </div>
+      <!--End container-login-->
     </section>
     <!--End Section-->
     <!--Footer-->
     <iframe
+      class="hide-content"
       src="./components/footer.html"
       frameborder="0"
       width="100%"
