@@ -16,6 +16,9 @@ body {
   border: 2px solid red;
   background-color: #fd8d8d;
 }
+.hide-content {
+  display: none;
+}
 
 /*IFRAME*/
 /*STYLE*/
@@ -379,5 +382,98 @@ body {
 @media screen and (max-width: 420px) {
   .postimage-postlist li h2 span {
     display: none;
+  }
+}
+
+/*LOGIN*/
+/*MAIN*/
+.login-body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #0a1744;
+  background-image: url(../assets/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*alinhamento no centro do login*/
+.main-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*parte que foi criado o desfoque da caixa de login*/
+.container-login {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+h1 {
+  color: #72efdb;
+  size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+/*inicio da estilização dos inputs*/
+.login-username,
+.login-password {
+  text-align: center;
+}
+
+.login-username,
+.login-password,
+.login-submit {
+  padding-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 350px;
+  background-color: initial;
+  border: none;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.2);
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #72efdb;
+  border: none;
+  color: #0b1741;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+::placeholder {
+  color: white;
+}
+/*Fim da estilização dos inputs*/
+
+/*LOGIN FOR 500px AND LESS*/
+@media screen and (max-width: 500px) {
+  .container-login {
+    width: 300px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 270px;
   }
 }
