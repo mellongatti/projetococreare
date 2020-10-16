@@ -33,6 +33,7 @@ body {
 .iframe-footer-container {
   height: 90px;
   margin-bottom: auto;
+  color: white;
 }
 .iframe-div {
   margin: 0;
@@ -117,6 +118,141 @@ body {
   .footer-container {
     font-size: 12px;
   }
+}
+
+/*ABOUT*/
+/*MAIN*/
+.about-container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+}
+
+.about-project {
+  color: white;
+  display: flex;
+}
+
+.image-body {
+  padding-right: 300px;
+}
+
+.who-are {
+  color: white;
+  display: flex;
+}
+
+.title-about {
+  color: white;
+  width: 30em;
+}
+
+.text-1 {
+  color: white;
+}
+
+.cards {
+  width: 1500px;
+  height: 400px;
+  display: flex;
+  display: inline-flex;
+  padding: 20px 10px 80px;
+}
+
+.italo {
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: #0a1744;
+  box-shadow: 0 1px 5px;
+  display: inline-block;
+  color: white;
+  margin: 20px 0px 80px;
+}
+
+.melissa {
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: #0a1744;
+  box-shadow: 0 1px 5px;
+  display: inline-block;
+  color: white;
+  margin: 20px 30px 80px;
+}
+
+.kaique {
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: #0a1744;
+  box-shadow: 0 1px 5px;
+  display: inline-block;
+  color: white;
+  margin: 20px 0px 80px;
+}
+
+.josivan {
+  width: 250px;
+  height: 300px;
+  border-radius: 6px;
+  background-color: #0a1744;
+  box-shadow: 0 1px 5px;
+  display: inline-block;
+  color: white;
+}
+
+.image {
+  background-color: #0a1744;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.image img {
+  background-color: #0a1744;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.card-body {
+  background-color: #0a1744;
+  padding: 20px;
+  padding-top: 1px;
+  text-align: center;
+}
+
+.card-body h3 {
+  text-align: center;
+  color: rgb(114, 239, 219);
+}
+
+.top {
+  border-radius: 6px;
+  background-color: #0a1744;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: justify;
+  margin-left: 0.5px;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+  color: white;
 }
 
 /*INDEX*/
