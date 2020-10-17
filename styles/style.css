@@ -7,7 +7,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
-  background-color: #0a1744;
+  background: rgb(13, 36, 112);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 36, 112, 1) 38%,
+    rgba(11, 26, 73, 1) 64%
+  );
+}
+a {
+  text-decoration: none;
 }
 .white-text {
   color: #fff;
@@ -124,10 +132,12 @@ body {
 /*MAIN*/
 .about-container {
   display: flex;
-  width: 80%;
+  width: 90%;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 
 .about-project {
@@ -135,126 +145,157 @@ body {
   display: flex;
 }
 
-.image-body {
-  padding-right: 300px;
+.about-project-heading {
+  font-size: 60px;
+  text-align: justify;
+  color: #fff;
 }
 
-.who-are {
-  color: white;
+.about-project-texts {
+  width: 50%;
+}
+.text-about {
+  text-align-last: justify;
+}
+
+.image-body {
+  width: 50%;
+  margin-left: 20px;
   display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.image-body img {
+  width: 70%;
 }
 
 .title-about {
-  color: white;
-  width: 30em;
+  color: #fff;
+  font-size: 35px;
 }
 
-.text-1 {
-  color: white;
+.aboutus-container {
+  display: flex;
+  width: 90%;
+  margin-top: 100px;
+  flex-flow: column;
 }
 
 .cards {
-  width: 1500px;
-  height: 400px;
   display: flex;
-  display: inline-flex;
-  padding: 20px 10px 80px;
 }
-
-.italo {
-  width: 250px;
+.card {
+  width: 230px;
+  min-width: 230px;
   height: 300px;
   border-radius: 6px;
-  background-color: #0a1744;
-  box-shadow: 0 1px 5px;
-  display: inline-block;
-  color: white;
-  margin: 20px 0px 80px;
-}
-
-.melissa {
-  width: 250px;
-  height: 300px;
-  border-radius: 6px;
-  background-color: #0a1744;
-  box-shadow: 0 1px 5px;
-  display: inline-block;
-  color: white;
-  margin: 20px 30px 80px;
-}
-
-.kaique {
-  width: 250px;
-  height: 300px;
-  border-radius: 6px;
-  background-color: #0a1744;
-  box-shadow: 0 1px 5px;
-  display: inline-block;
-  color: white;
-  margin: 20px 0px 80px;
-}
-
-.josivan {
-  width: 250px;
-  height: 300px;
-  border-radius: 6px;
-  background-color: #0a1744;
-  box-shadow: 0 1px 5px;
-  display: inline-block;
-  color: white;
-}
-
-.image {
-  background-color: #0a1744;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border-radius: 50%;
-  margin-top: 40px;
-}
-
-.image img {
-  background-color: #0a1744;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-
-.card-body {
-  background-color: #0a1744;
-  padding: 20px;
-  padding-top: 1px;
-  text-align: center;
-}
-
-.card-body h3 {
-  text-align: center;
-  color: rgb(114, 239, 219);
-}
-
-.top {
-  border-radius: 6px;
-  background-color: #0a1744;
-  display: flex;
-  justify-content: center;
-}
-
-h1 {
-  font-size: 60px;
-  text-align: justify;
-  margin-left: 0.5px;
-}
-
-p {
+  background-color: #0b1a49;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   color: white;
+  margin: 30px 15px 100px;
 }
 
-h2 {
-  font-size: 40px;
-  color: white;
+.card-top {
+  margin-top: 20px;
 }
 
+.card-top img {
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-container {
+    width: 95%;
+  }
+  .aboutus-container {
+    width: 95%;
+  }
+
+  .card {
+    width: 200px;
+    min-width: 200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-project-texts {
+    width: 80%;
+  }
+  .text-about {
+    text-align: justify;
+  }
+  .image-body {
+    width: 80%;
+  }
+  .image-body img {
+    width: 80%;
+  }
+  .about-project {
+    flex-flow: column;
+    align-items: center;
+  }
+  .card-top img {
+    border-radius: 50px;
+    width: 80px;
+  }
+  .card {
+    width: 180px;
+    min-width: 180px;
+    text-align: center;
+    color: white;
+    margin: 30px 15px 100px;
+  }
+  .card-body h3 {
+    font-size: 20px;
+  }
+  .card-body p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .card-top img {
+    border-radius: 50px;
+    width: 70px;
+  }
+  .card {
+    width: 160px;
+    min-width: 160px;
+    text-align: center;
+    color: white;
+    margin: 30px 5px 100px;
+  }
+  .card-body h3 {
+    font-size: 20px;
+  }
+  .card-body p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .title-about {
+    margin-bottom: 40px;
+  }
+  .cards {
+    flex-flow: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    height: 300px;
+    border-radius: 6px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .card-top {
+    margin-top: 20px;
+  }
+
+  .card-top img {
+    border-radius: 50px;
+  }
+}
 /*INDEX*/
 /*SECTION*/
 .index-section-container {
