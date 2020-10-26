@@ -24,7 +24,7 @@ a {
   background-color: #fd8d8d;
 }
 .hide-content {
-  display: none;
+  display: none !important;
 }
 
 /*IFRAME*/
