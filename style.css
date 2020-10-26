@@ -88,6 +88,40 @@ body {
   border: none;
 }
 
+.botao1 {  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.propriedades {
+  background-color: darkblue;
+  text-decoration: none;
+  text-align: center;
+  color: aquamarine;
+  padding: 8px;
+  border-radius: 14px;
+  width: 100px;
+  margin: auto;
+
+}
+
+
+/*
+@media screen and (min-width: 520px) {
+  .botao1{
+    
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+
+  }
+}
+
 @media screen and (max-width: 768px) {
   .thead-hashtag, .tbody-name {
     width: 50%;
@@ -96,7 +130,7 @@ body {
     width: 25%;
   }
 }
-
+*/
 @media screen and (max-width: 520px) {
   .search-container {
     width: 90%;
@@ -105,7 +139,7 @@ body {
   .search-heading-title {
     font-size: 30px;
   }
-  .thead {
+  .thead, .botao1 {
     font-size: 18px;
     height: 50px;
     margin-left: 15px;
@@ -123,5 +157,7 @@ body {
     line-height: 4;
     margin-left: 15px;
     margin-right: 15px;
+
+  
   }
 }
