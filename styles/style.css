@@ -499,6 +499,9 @@ a {
 
 /*POSTS E IMAGENS FOR 1200px AND LESS*/
 @media screen and (max-width: 1200px) {
+  .hide {
+    display: none !important;
+  }
   .postimage-responsive-bar {
     display: flex;
     align-self: center;

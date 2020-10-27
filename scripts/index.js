@@ -7,12 +7,12 @@ function show(item){
         imgClass.className = "postimage-responsive-tweets postimage-responsive-active"
         tweetClass.className = "postimage-responsive-tweets"
         imglist.className = "postimage-imagelist"
-        tweetlist.className = "postimage-postlist hide-content"
+        tweetlist.className = "postimage-postlist hide"
     }
     if (item === 'tweet') {
         tweetClass.className = "postimage-responsive-tweets postimage-responsive-active"
         imgClass.className = "postimage-responsive-tweets"
-        imglist.className = "postimage-imagelist hide-content"
+        imglist.className = "postimage-imagelist hide"
         tweetlist.className = "postimage-postlist"
     }
 }
