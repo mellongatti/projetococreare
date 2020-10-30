@@ -13,6 +13,10 @@ body {
     rgba(11, 26, 73, 1) 64% rgba(13, 36, 112, 1) 38%
   );
 }
+.text-red {
+  color: red;
+}
+
 a {
   text-decoration: none;
 }
@@ -659,6 +663,13 @@ h1 {
 .login-username,
 .login-password {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+input,
+select,
+textarea {
+  color: #fff;
 }
 
 .login-username,
@@ -667,7 +678,7 @@ h1 {
   padding-bottom: 15px;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
   width: 350px;
   background-color: initial;
@@ -704,7 +715,7 @@ input:focus {
   .container-login {
     width: 300px;
   }
-  input[type="text"],
+  input[type="email"],
   input[type="password"] {
     width: 270px;
   }
