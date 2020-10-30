@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-
   <body class="login-body">
     <!--Header-->
     <iframe
@@ -19,14 +18,21 @@
     <!--Section-->
     <section class="main-container">
       <div class="container-login">
-        <form method="POST" action="">
+        <form method="GET" action="login.html">
           <h1>Login</h1>
           <div class="login-username">
-            <input type="text" name="username" placeholder="Usuário" required />
+            <input
+              id="login"
+              type="email"
+              name="username"
+              placeholder="Usuário"
+              required
+            />
           </div>
           <!--Input-->
           <div class="login-password">
             <input
+              id="senha"
               type="password"
               name="password"
               placeholder="Senha"
@@ -35,7 +41,7 @@
           </div>
           <!--End Input-->
           <div class="login-submit">
-            <input type="submit" value="ACESSAR" />
+            <input id="enviar" type="submit" value="ACESSAR" />
           </div>
         </form>
       </div>
@@ -52,5 +58,6 @@
       width="100%"
     ></iframe>
     <!--End Footer-->
+    <script src="./scripts/login.js"></script>
   </body>
 </html>

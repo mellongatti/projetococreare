@@ -667,7 +667,7 @@ h1 {
   padding-bottom: 15px;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
   width: 350px;
   background-color: initial;
