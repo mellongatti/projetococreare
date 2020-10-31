@@ -25,68 +25,11 @@
             <div class="thead-hour">Hora</div>
           </div>
         </div>
-        <div class="tbody">
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-
-          <div class="tbody-tr borderless">
-            <div class="tbody-name">#hashtagname</div>
-            <div class="tbody-dateline">25/02</div>
-            <div class="tbody-hourline">09:30</div>
-          </div>
-        </div>
-        <!--Fim da tabela onde constam as ultimas # pesquisadas-->
+        <div id="buscas" class="tbody"></div>
+      </div>
+      <div id="paginacao">
+        <h1 onclick="paginaAnterior()" id="left">&lt;</h1>
+        <h1 onclick="proximaPagina()" id="right">&gt;</h1>
       </div>
     </div>
     <!--Footer-->
@@ -99,5 +42,6 @@
       width="100%"
     ></iframe>
     <!--End Footer-->
+    <script src="./scripts/buscas.js"></script>
   </body>
 </html>
