@@ -1,19 +1,23 @@
 /*FONTS FOR PROJECT*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 
 /*BASE STYLE*/
 body {
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
-  background: rgb(13, 36, 112);
+  background: #061649;
   background: linear-gradient(
     180deg,
-    rgba(13, 36, 112, 1) 38%,
-    rgba(11, 26, 73, 1) 64%
+    rgba(11, 26, 73, 1) 64% rgba(13, 36, 112, 1) 38%
   );
 }
+.text-red {
+  color: red;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,7 +29,7 @@ a {
   background-color: #fd8d8d;
 }
 .hide-content {
-  display: none;
+  display: none !important;
 }
 
 /*IFRAME*/
@@ -104,6 +108,25 @@ a {
   }
   .header-menu-button2 {
     margin-left: 13px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-container {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .header-logo {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header-logo-img {
+    width: 130px;
+  }
+  .header-menu {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
   }
 }
 
@@ -481,6 +504,9 @@ a {
 
 /*POSTS E IMAGENS FOR 1200px AND LESS*/
 @media screen and (max-width: 1200px) {
+  .hide {
+    display: none !important;
+  }
   .postimage-responsive-bar {
     display: flex;
     align-self: center;
@@ -583,10 +609,11 @@ a {
 
   .postimage-imagelist-textdesc {
     padding-left: 7px;
+    font-size: 13px;
   }
 
   .postimage-imagelist-textdesc small {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 /*POSTS E IMAGENS FOR 420px AND LESS*/
@@ -637,6 +664,13 @@ h1 {
 .login-username,
 .login-password {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+input,
+select,
+textarea {
+  color: #fff;
 }
 
 .login-username,
@@ -645,7 +679,7 @@ h1 {
   padding-bottom: 15px;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
   width: 350px;
   background-color: initial;
@@ -682,7 +716,7 @@ input:focus {
   .container-login {
     width: 300px;
   }
-  input[type="text"],
+  input[type="email"],
   input[type="password"] {
     width: 270px;
   }
@@ -729,6 +763,8 @@ input:focus {
   line-height: 5;
   margin-left: 30px;
   margin-right: 30px;
+  font-family: "Rubik";
+  font-weight: bolder;
 }
 .tbody {
   border-radius: 0px 0px 14px 14px;
@@ -756,10 +792,12 @@ input:focus {
 }
 .tbody-name {
   color: white;
+  font-family: "Montserrat";
 }
 .tbody-dateline,
 .tbody-hourline {
   color: #72efdb;
+  font-family: "Rubik";
 }
 .tbody-tr {
   display: flex;
