@@ -7,11 +7,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
-  background: rgb(13, 36, 112);
+  background: #061649;
   background: linear-gradient(
     180deg,
-    rgba(13, 36, 112, 1) 38%,
-    rgba(11, 26, 73, 1) 64%
+    rgba(11, 26, 73, 1) 64% rgba(13, 36, 112, 1) 38%
   );
 }
 a {
@@ -25,7 +24,7 @@ a {
   background-color: #fd8d8d;
 }
 .hide-content {
-  display: none;
+  display: none !important;
 }
 
 /*IFRAME*/
@@ -104,6 +103,25 @@ a {
   }
   .header-menu-button2 {
     margin-left: 13px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-container {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .header-logo {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header-logo-img {
+    width: 130px;
+  }
+  .header-menu {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
   }
 }
 
@@ -481,6 +499,9 @@ a {
 
 /*POSTS E IMAGENS FOR 1200px AND LESS*/
 @media screen and (max-width: 1200px) {
+  .hide {
+    display: none !important;
+  }
   .postimage-responsive-bar {
     display: flex;
     align-self: center;
@@ -583,10 +604,11 @@ a {
 
   .postimage-imagelist-textdesc {
     padding-left: 7px;
+    font-size: 13px;
   }
 
   .postimage-imagelist-textdesc small {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 /*POSTS E IMAGENS FOR 420px AND LESS*/
@@ -645,7 +667,7 @@ h1 {
   padding-bottom: 15px;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
   width: 350px;
   background-color: initial;
