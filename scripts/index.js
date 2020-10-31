@@ -1,3 +1,7 @@
+/**
+ * Função para trocar a view entre imagens e tweets no mobile
+ * @param {recebe o tipo de item retornado do html para fazer a devida verificação} item 
+ */
 function show(item){
     let imgClass = document.getElementById("image");
     let tweetClass = document.getElementById("tweet");

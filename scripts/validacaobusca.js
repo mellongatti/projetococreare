@@ -1,5 +1,9 @@
 // Validar campo Obrigatório de preenchimento e verificar se não foi preenchido com espaços em branco
 
+
+/**
+ * FALTOU USAR {@link validarForm()} NO HTML
+ */
 function validarForm() {
 
 
@@ -17,6 +21,9 @@ if(busca == null || busca.length == 0 || /^\s+$/.test(busca)){
 
 // Contabilizar os caracteres digitados e avisar caso passe do limite
 
+/**
+ * FALTOU USAR
+ */
 function mostrarResultado(box,num_max,busca)
 {
     var contagem_carac = box.length;
@@ -36,6 +43,9 @@ function mostrarResultado(box,num_max,busca)
 
 // Mostrar quantos caracteres ainda posso digitar, e quando ultrapassar este valor não deixar.
 
+/**
+ * FALTOU USAR
+ */
 function contarCaracteres(box,valor,busca){
  var conta = valor - box.length;
  document.getElementById(busca).innerHTML = "Você ainda pode digitar " + conta + " caracteres";
@@ -48,6 +58,9 @@ function contarCaracteres(box,valor,busca){
 
 // Eliminar caractere # caso seja digitado.
 
+/**
+ * FALTOU USAR
+ */
 function limpaCaractereEspecial(busca)
  {
 busca = document.getElementById(busca);

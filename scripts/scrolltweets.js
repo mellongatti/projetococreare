@@ -1,3 +1,6 @@
+/**
+ * Gerador de listas via JS, usando Scroll Infinito
+ */
 let list = document.getElementById("tweetlist")
 let html = 
 `<li>
@@ -12,6 +15,11 @@ let html =
 </div>
 </li>`
 
+/**
+ * Função para verificar o fim da página, gerando assim mais N listas.
+ * Criada usando JQuery
+ * Retorna null
+ */
 $(window).on("scroll", function() {
     let scrollHeight = $(document).height();
     let scrollPos = $(window).height() + $(window).scrollTop();
