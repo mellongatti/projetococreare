@@ -3,36 +3,369 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hashtag Finder</title>
+    <link href="lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="validacaobusca.js"></script>
   </head>
   <body>
     <!--HEADER-->
     <iframe
+      class="iframe-header-container"
       src="./components/header.html"
       frameborder="0"
       width="100%"
     ></iframe>
     <!--END HEADER-->
     <!-- MAIN SECTION-->
-    <section>
+    <section class="index-section-container">
       <br />
-      <img src="./assets/hero-bg.jpg" width="100%" alt="" />
-      <h1>Encontre hashtags de maneira fácil</h1>
-      <p>
-        Digite o que deseja no campo de buscas e confira os resultados do
-        Twitter abaixo
-      </p>
-      <div>
-        <img src="./assets/icon-search.svg" alt="" />
-        <input type="search" name="busca" id="busca" placeholder="Buscar..." />
+      <div class="index-section-textarea">
+        <h1 class="index-section-textarea-heading white-text">
+          Encontre hashtags<br />de maneira fácil
+        </h1>
+        <p class="index-section-textarea-text white-text">
+          Digite o que deseja no campo de buscas e<br />confira os resultados do
+          Twitter abaixo
+        </p>
       </div>
+      <form class="index-section-search" action="" method="get">
+        <label for="busca"
+          ><img src="./assets/icon-search.svg" width="20px" alt=""
+        /></label>
+        <input type="search" name="busca" id="busca" placeholder="Buscar..." />
+      </form>
     </section>
     <!--END MAIN SECTION-->
+    <!-- POSTS SECTION -->
+    <section class="postimage-container">
+      <p class="postimage-headingtext white-text">
+        Exibindo os 10 resultados mais recentes para #hashtag
+      </p>
+      <div class="postimage-responsive-bar">
+        <div
+          onclick="show('tweet')"
+          id="tweet"
+          class="postimage-responsive-tweets postimage-responsive-active"
+        >
+          <span>Tweets</span>
+        </div>
+        <div
+          onclick="show('image')"
+          id="image"
+          class="postimage-responsive-images"
+        >
+          <span>Imagens</span>
+        </div>
+      </div>
+      <div class="postimage-hashtagcontent">
+        <!--List for images-->
+        <ul id="imagelist" class="postimage-imagelist hide">
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              data-lightbox="image-1"
+              data-title="My caption"
+              href="./assets/hashtag.jpeg"
+            >
+              <img
+                class="postimage-imagelist-image"
+                src="./assets/hashtag.jpeg"
+              />
+              <div class="postimage-imagelist-textdesc">
+                <small>Postado por:</small>
+                <span>@twitterusername</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!--End List for images-->
+        <!--List for posts-->
+        <ul id="tweetlist" class="postimage-postlist">
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/user.png" />
+            <div>
+              <h2>UserName <span>@twitterusername</span></h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus tempora voluptates numquam esse!
+              </p>
+              <a href="">Ver mais no twitter</a>
+            </div>
+          </li>
+        </ul>
+        <!--End List for posts-->
+      </div>
+    </section>
+    <!-- END POST SECTION -->
     <!--Footer-->
-    <iframe
-      src="./components/footer.html"
-      frameborder="0"
-      width="100%"
-    ></iframe>
+    <div class="iframe-div">
+      <iframe
+        class="iframe-footer-container"
+        src="./components/footer.html"
+        frameborder="0"
+        scolling="no"
+        margin="0"
+        width="100%"
+      ></iframe>
+    </div>
     <!--End Footer-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/scrolltweets.js"></script>
+    <script src="./scripts/buscas.js"></script>
+    <script src="./scripts/lightbox.js"></script>
+    <script src="validacaobusca.js"></script>
   </body>
 </html>
